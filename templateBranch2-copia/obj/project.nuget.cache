@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s+SzHO+1OAxJrmBesVK6zi8tsvJEkUYGOUNINBNRyUDJzHUlXn70oSOGkXTQh9fpB+hI9LVXeO3WoJY+oCsMSA==",
+  "dgSpecHash": "oXbkAc2v3I0QLz36L3xkMkEGJXifnNxEDhi40ceRGuXvOZ8KXgeRT8LXWRS+IH9M9VkGxQSLWbUGZwj/4uaavA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\devandroid\\Downloads\\templateBranch2 - copia\\templateBranch2-copia\\templateBranch2.csproj",
+  "projectFilePath": "C:\\Users\\devandroid\\Downloads\\templateBranch2 - copia\\TEMPLATE\\templateBranch2-copia\\templateBranch2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\devandroid\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\devandroid\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

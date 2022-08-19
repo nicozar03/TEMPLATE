@@ -1,3 +1,26 @@
-/*
-Custom Css
-*/
+.product-image {
+	transition: all 0.3s ease-out;
+	position: relative;
+	overflow: hidden;
+  max-width: 200px;
+  max-height: 200px;
+
+
+}
+.card{
+    margin-top: 1vh; 
+    border-radius: 24px;
+    border-color: #102770;
+    
+   }
+
+   .center{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+    
+  } 
+  
+.row{
+ border-radius: 10px;   
+}
