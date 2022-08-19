@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "DetalleProducto";
+}
+<h1>Información del producto:</h1>
+
+<section class="page-contain">
+  <div class="data-card">
+    <h3><img class='product-image' src='@ViewBag.Producto.foto' alt=""></h3>
+    <h4 class="card-title"><strong>@ViewBag.Producto.nombre</strong></h4>
+    <h6 class="card-text"> <strong>Descripcion:</strong> @ViewBag.Producto.descripcion </h6>
+     <h6 class="card-text"> <strong>Marca:</strong> @ViewBag.Producto.marca </h6>
+     <h6 class="card-text"> <strong>Precio</strong> $@ViewBag.Producto.precio </h6>
+
+     <a href='@Url.Action("AgregarProducto","Home", new{idProducto = @ViewBag.Producto.idProducto, nombre = @ViewBag.Producto.nombre, descripcion = @ViewBag.Producto.descripcion, foto= @ViewBag.Producto.foto, marca= @ViewBag.Producto.marca, precio = @ViewBag.Producto.precio, stock=@ViewBag.Producto.stock, destacado =@ViewBag.Producto.destacado ,cantidad = @ViewBag.Producto.cantidad})' class="link-text" id="btn-buy"><span>COMPRAR</span></a>
+  </div>
+</section>
