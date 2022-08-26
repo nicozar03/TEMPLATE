@@ -387,7 +387,7 @@ li{
  background-color: #fff; 
  border-radius: 10px;
  display: grid;
- grid-template-columns: auto 22vw auto auto auto auto auto;
+ grid-template-columns: auto auto auto auto auto auto auto;
  
 }
 
@@ -402,8 +402,8 @@ li{
 }
 
 .cart-img{
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   border-radius: 10px;
   margin-left: 2vw;
   

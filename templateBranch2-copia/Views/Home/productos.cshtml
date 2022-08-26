@@ -44,7 +44,9 @@
                     <div class="col-12 col-md-4 mb-4">
                       <div class="card h-100 product-wap rounded-0">
                     <div class="card rounded-0">
+                    <div class="center">
                       <img class="product-image" src="@productos.foto" alt="@productos.foto">
+                      </div>
                        <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                          <ul class="list-unstyled">
                             <li><a href='@Url.Action("detalleProductos","Home", new{idProducto = productos.idProducto, nombre = productos.nombre, descripcion = productos.descripcion , idCategoria = productos.idCategoria})'  class="btn btn-success text-white mt-2"><i class="far fa-eye"></i></a></li>
@@ -54,7 +56,9 @@
                       </div>
                       <div class="card-body">
                             <h3 class="h3 text-decoration-none text-dark">@productos.nombre</h3>
+                            <ul class="list-unstyled d-flex justify-content-between">
                             <li class="text-muted text-right">$@productos.precio</li>
+                            </ul>
                             <p class="card-text">
                                 @productos.descripcion
                             </p>

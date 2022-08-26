@@ -41,25 +41,32 @@
                 <div class="row">
  @{
                   foreach(Producto productos in @ViewBag.listadoProductosSubcategorias){
-                    <div class="col-12 col-md-4">
-                    <div class="card product-wap">
+                    <div class="col-12 col-md-4 mb-4">
+                      <div class="card h-100 product-wap rounded-0">
+                    <div class="card rounded-0">
+                    <div class="center">
                       <img class="product-image" src="@productos.foto" alt="@productos.foto">
+                      </div>
                        <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                          <ul class="list-unstyled">
                             <li><a href='@Url.Action("detalleProductos","Home", new{idProducto = productos.idProducto, nombre = productos.nombre, descripcion = productos.descripcion , idCategoria = productos.idCategoria})'  class="btn btn-success text-white mt-2"><i class="far fa-eye"></i></a></li>
-                             <li><a class="btn btn-success text-white mt-2" href="shop-single.html"><i class="fas fa-cart-plus"></i></a></li>
+                             <li><a class="btn btn-success text-white mt-2" href='@Url.Action("AgregarProducto","Home", new{idProducto = productos.idProducto, nombre = productos.nombre, descripcion = productos.descripcion, foto= productos.foto, marca= productos.marca, precio = productos.precio, stock=productos.stock, destacado =productos.destacado ,cantidad = productos.cantidad})' ><i class="fas fa-cart-plus"></i></a></li>
                         </ul>
                      </div>
                       </div>
                       <div class="card-body">
-                        <div class="data-position">
-                        <h5> <div class="data">@productos.nombre</div> </h5>
-                        </div>
-                        <h5><div class="data">$@productos.precio</div> </h5>
+                            <h3 class="h3 text-decoration-none text-dark">@productos.nombre</h3>
+                            <ul class="list-unstyled d-flex justify-content-between">
+                            <li class="text-muted text-right">$@productos.precio</li>
+                            </ul>
+                            <p class="card-text">
+                                @productos.descripcion
+                            </p>
  
                         
 
                         </div>
+                    </div>
                     </div>
                     
                   }   

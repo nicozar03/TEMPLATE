@@ -12,6 +12,36 @@
   align-items: center;
   
 } 
+
+.container-cart{
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto 25vw auto auto auto auto auto;
+  
+ }
+ 
+ .container-cart-total{
+   background-color: #fff; 
+   border-radius: 10px;
+  }
+
+  .cart-info{
+    display: inline-block;
+    margin-top: 1vw;
+  }
+  
+  .cart-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 2vw;
+    
+  }
+
+  .wpp{
+   width: 75px; 
+   height: 75px;
+  }
 /*
 .card{
     margin-top: 1vh; 
