@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KvsV0Q5qoiu5eh8hzfulVNdUJK3nby4QZsMy1jo7EzU=",
+  "Hash": "OXQ6GzsTSOpceBOqIQzAl7yPpdPYGpIfTDHZchmVZ6U=",
   "Source": "templateBranch2",
   "BasePath": "_content/templateBranch2",
   "Mode": "Default",
@@ -440,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\resaltadores.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\devandroid\\Desktop\\GitHub\\TEMPLATE\\templateBranch2-copia\\wwwroot\\img\\wpp.png",
+      "SourceId": "templateBranch2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\devandroid\\Desktop\\GitHub\\TEMPLATE\\templateBranch2-copia\\wwwroot\\",
+      "BasePath": "_content/templateBranch2",
+      "RelativePath": "img/wpp.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\wpp.png"
     },
     {
       "Identity": "C:\\Users\\devandroid\\Desktop\\GitHub\\TEMPLATE\\templateBranch2-copia\\wwwroot\\js\\bootstrap.bundle.min.js",
