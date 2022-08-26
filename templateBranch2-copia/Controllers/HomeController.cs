@@ -42,8 +42,7 @@ List<Producto> ListaProductos = new List<Producto>();
         Producto producto;
         producto = BD.ConsultaProducto(idProducto);
         ViewBag.producto = producto;
-        ViewBag.producto.descripcion = descripcion;
-        ViewBag.producto.nombre = nombre;
+       
 
         return View("detalleProducto");
     }
