@@ -5,9 +5,9 @@
 <section class="bg-light">
         <div class="container pb-5">
             <div class="row">
-                <div class="col-lg-5 mt-5">
-                    <div class="card mb-3">
-                        <img class="card-img img-fluid" src="@ViewBag.Producto.foto" alt="Card image cap" id="product-detail">
+                <div class="col-lg-5 col-sm-12 mt-5">
+                    <div class="card mb-3" id="card">
+                        <img class="detail-img" src="@ViewBag.Producto.foto" alt="Card image cap" id="product-detail">
                     </div>
                     <div class="row">
                         <!--Start Carousel Wrapper-->
@@ -20,17 +20,17 @@
                                     <div class="row">
                                         <div class="col-4">
                                             <a href="#">
-                                                <img class="card-img img-fluid" src="@ViewBag.Producto.foto" alt="Product Image 1">
+                                                <img class="card-img img-fluid more-img" src="@ViewBag.Producto.foto" alt="Product Image 1">
                                             </a>
                                         </div>
                                         <div class="col-4">
                                             <a href="#">
-                                                <img class="card-img img-fluid" src="@ViewBag.Producto.foto2" alt="Product Image 2">
+                                                <img class="card-img img-fluid more-img" src="@ViewBag.Producto.foto2" alt="Product Image 2">
                                             </a>
                                         </div>
                                         <div class="col-4">
                                             <a href="#">
-                                                <img class="card-img img-fluid" src="@ViewBag.Producto.foto3" alt="Product Image 3">
+                                                <img class="card-img img-fluid more-img" src="@ViewBag.Producto.foto3" alt="Product Image 3">
                                             </a>
                                         </div>
                                     </div>
@@ -48,7 +48,7 @@
                 <div class="col-lg-7 mt-5">
                     <div class="card">
                         <div class="card-body">
-                            <h1 class="h2">Active Wear</h1>
+                            <h1 class="h2">@ViewBag.Producto.nombre</h1>
                             <p class="h3 py-2">$@ViewBag.Producto.precio</p>
                             <p class="py-2">
                                 <i class="fa fa-star text-warning"></i>
@@ -56,11 +56,11 @@
                                 <i class="fa fa-star text-warning"></i>
                                 <i class="fa fa-star text-warning"></i>
                                 <i class="fa fa-star text-secondary"></i>
-                                <span class="list-inline-item text-dark">Rating 4.8 | 36 Comments</span>
+                                <span class="list-inline-item text-dark">Rating 4.8 | 36 Comentarios</span>
                             </p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
-                                    <h6>Brand:</h6>
+                                    <h6>Marca:</h6>
                                 </li>
                                 <li class="list-inline-item">
                                     <p class="text-muted"><strong>@ViewBag.Producto.marca</strong></p>
@@ -84,7 +84,7 @@
                                     <div class="col-auto">
                                         <ul class="list-inline pb-3">
                                             <li class="list-inline-item text-right">
-                                                Quantity
+                                                Cantidad
                                                 <input type="hidden" name="cantidad" id="product-quanity" value="1">
                                             </li>
                                             <li class="list-inline-item"><span class="btn btn-success" id="btn-minus">-</span></li>

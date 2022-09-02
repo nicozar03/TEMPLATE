@@ -64,6 +64,21 @@ a.text-secondary:hover {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+
+#card{
+max-width: 800px;
+max-height: 500px;  
+}
+.detail-img{
+max-height:500px;
+max-width:800px;  
+}
+
+.more-img{
+width: 125px;
+height: 100px;  
+}
 /*
 .card{
     margin-top: 1vh; 
