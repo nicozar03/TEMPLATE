@@ -23,7 +23,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
 
-List<Producto> ListaProductos = new List<Producto>();
+        List<Producto> ListaProductos = new List<Producto>();
         ListaProductos = BD.ListaProductosDestacados(); 
         ViewBag.Producto = ListaProductos;
         
@@ -135,12 +135,14 @@ List<Producto> ListaProductos = new List<Producto>();
         ViewBag.Carrito = new Carrito();
         return View("Carrito");
     }
-    public IActionResult AgregarProducto(int idProducto, string nombre, string descripcion, string foto, string marca, float precio, int stock, bool destacado, int cantidad, int idSubCategoria, int idCategoria)
+    [HttpGet]
+    public IActionResult AgregarProducto(int idProducto, string nombre, string descripcion, string foto, string marca, float precio, int stock, bool destacado, int cantidad, int idSubCategoria, int idCategoria, string foto2, string foto3)
     {
+       
         var visitString = HttpContext.Session.GetString("Carrito");
         Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(visitString);
 
-        MiCarrito.AgregarProducto(new Producto(idProducto, nombre, descripcion, foto, marca, precio, stock, destacado, cantidad = 1, idSubCategoria, idCategoria));
+        MiCarrito.AgregarProducto(new Producto(idProducto, nombre, descripcion, foto, marca, precio, stock, destacado, cantidad, idSubCategoria, idCategoria, foto2, foto3));
                         
         string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
 

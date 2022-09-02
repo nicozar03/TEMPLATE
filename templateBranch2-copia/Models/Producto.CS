@@ -22,6 +22,8 @@ namespace templateBranch2.Models
         private int _cantidad;
         private int _idSubCategoria;
         private int _idCategoria;
+        private string _foto2;
+        private string _foto3;
 
 
         public int idProducto {
@@ -96,8 +98,20 @@ namespace templateBranch2.Models
                 _idCategoria= value;
             }
         }
+        public string foto2 {
+            get { return _foto2;}
+            set{
+                _foto2 = value;
+            }
+        }
+        public string foto3 {
+            get { return _foto3;}
+            set{
+                _foto3 = value;
+            }
+        }
 
-        public Producto(int idProducto, string nombre, string descripcion, string foto, string marca, float precio, int stock, bool destacado, int cantidad, int idSubCategoria, int idCategoria){
+        public Producto(int idProducto, string nombre, string descripcion, string foto, string marca, float precio, int stock, bool destacado, int cantidad, int idSubCategoria, int idCategoria,string foto2,string foto3){
             _idProducto =idProducto;
             _nombre=nombre;
             _descripcion=descripcion;
@@ -109,6 +123,8 @@ namespace templateBranch2.Models
             _cantidad = cantidad;
             _idSubCategoria = idSubCategoria;
             _idCategoria = idCategoria;
+            _foto2 = foto2;
+            _foto3 = foto3;
         }
 
         public Producto(){
