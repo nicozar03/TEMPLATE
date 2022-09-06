@@ -18,55 +18,7 @@
 </head>
 
 <body>
-
-
-
-
-
-    <!-- Header -->
-    <header>
-    <nav class="navbar navbar-expand-md navbar-light shadow">
-        <div class="container-fluid d-flex justify-content-between align-items-center">
-
-            <a class="navbar-brand text-success logo h2 align-self-center" asp-area="" asp-controller="Home" asp-action="Index">
-                Vip Papelera
-            </a>
-
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-                <div class="flex-fill">
-                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Productos">Productos</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                           <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contacto">Contacto</a></li>
-                        </li>
-                    </ul>
-                </div>
-
-                    <a class="nav-icon position-relative text-decoration-none" asp-area="" asp-controller="Home" asp-action="carrito" >
-                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </nav>
-</header>
-
-<!--@{
+@{
         
         
         List<subCategorias> ListasubCategorias= new List<subCategorias>();
@@ -82,32 +34,35 @@
 }
 
 
-    
+    <div class="row h-25" >
 
 
-        <header class="w-100">
-            <nav class="navbar navbar-expand-md navbar-dark bg-#1190CB border-bottom box-shadow mb-3" style="display:absolute;">
+        <header class="w-98">
+            <nav class="navbar navbar-expand-lg navbar-light shadow">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li><a class="nav-link active" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                            <li><a class="nav-link " asp-area="" asp-controller="Home" asp-action="Productos">Productos</a></li>
+                 <a class="navbar-brand text-success logo h2 align-self-center" asp-area="" asp-controller="Home" asp-action="Index">
+                Vip Papelera
+                 </a>
+             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                    <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between">
+                        <ul class="navbar-nav mr-auto ul">
+                            <li class="li"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" style="color: #59ab6e">Home</a></li>
+                            <li class="li"><a class="nav-link " asp-area="" asp-controller="Home" asp-action="Productos" style="color: #59ab6e">Productos</a></li>
 
 
                             @{
                                 foreach(Categorias categoria in @ViewBag.Categorias){
-                                    <li>
-                                        <a class="nav-link" href='@Url.Action("productosCategorias","Home", new{idCategoria = categoria.idCategoria})'>@categoria.nombre</a>
-                                        <ul>
+                                    <li class="li">
+                                        <a class="nav-link" style="color: #59ab6e" href='@Url.Action("productosCategorias","Home", new{idCategoria = categoria.idCategoria})'>@categoria.nombre</a>
+                                        <ul class="ul">
 
                                                 
                                                     @foreach (subCategorias subcategoria in @ViewBag.subCategorias)
                                                     {
                                                         if(subcategoria.idCategoria == categoria.idCategoria){
-                                                        <li><a href='@Url.Action("productosSubcategorias","Home", new{idSubCategoria = subcategoria.idSubcategoria})'>@subcategoria.nombre</a></li>
+                                                        <li class="li"><a href='@Url.Action("productosSubcategorias","Home", new{idSubCategoria = subcategoria.idSubcategoria})'>@subcategoria.nombre</a></li>
                                                     }
                                                     }
 
@@ -119,23 +74,40 @@
                             }
 
                                 
-                            <li><a class="nav-link" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ</a></li>
-                            <li><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contacto">Contacto</a></li>
+                         <li class="nav-item li">
+                            <a class="nav-link " asp-area="" asp-controller="Home" asp-action="FAQ" style="color: #59ab6e">FAQ</a>
+                        </li>
+                         <li class="nav-item li">
+                           <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contacto" style="color: #59ab6e">Contacto</a></li>
+                        </li>
+                            
 
                         </ul>
                     </div>
-                    
-                    <button style="background-color:#1190CB; border:none;"> <a class="nav-link" asp-area="" asp-controller="Home" asp-action="carrito"><i class="fa fa-shopping-cart" style= "font-size:36px;color:white"></i></a> </button>
+                    </div>
+                      <a class="nav-icon position-relative text-decoration-none" asp-area="" asp-controller="Home" asp-action="carrito" >
+                        <i class="fa fa-shopping-cart text-dark mr-1"  style= "font-size:36px;color:white"></i>
+                    </a>
                                 
                 </div>
             </nav>
         </header>
 
-    -->
+    </div>
+
+
+
+
+
+
+
+
+    
+
+
  <div class="vw-98">
             <main role="main">
                 @RenderBody()
-                <div class="push"></div>
             </main>
         </div>
 <div class="vw-98 d-flex justify-content-end" style="margin-top: 2vh">
@@ -212,6 +184,7 @@
 
     </footer>
     <!-- End Footer -->
+    
 
     <!-- Start Script -->
     <script src="~/js/jquery-1.11.0.min.js"></script>
