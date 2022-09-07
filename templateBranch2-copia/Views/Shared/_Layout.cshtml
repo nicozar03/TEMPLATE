@@ -128,10 +128,13 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Todos</a></li>
-                        <li><a class="text-decoration-none" href="#">Utiles Escolares</a></li>
-                        <li><a class="text-decoration-none" href="#">Insumos Computación</a></li>
-                        <li><a class="text-decoration-none" href="#">Libreria técnica</a></li>
+                       @{
+                                foreach(Categorias categoria in @ViewBag.Categorias){
+                                    <li>
+                                        <a class="text-decoration-none" href='@Url.Action("productosCategorias","Home", new{idCategoria = categoria.idCategoria})'>@categoria.nombre</a>
+                                    </li>
+                                }   
+                            }
                     </ul>
                 </div>
 
