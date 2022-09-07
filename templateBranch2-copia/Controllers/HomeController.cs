@@ -128,13 +128,6 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult VerSesion()
-    {
-
-        ViewBag.visits = HttpContext.Session.GetString("Carrito");
-        ViewBag.Carrito = new Carrito();
-        return View("Carrito");
-    }
     [HttpGet]
     public IActionResult AgregarProducto(int idProducto, string nombre, string descripcion, string foto, string marca, float precio, int stock, bool destacado, int cantidad, int idSubCategoria, int idCategoria, string foto2, string foto3)
     {
