@@ -111,13 +111,6 @@ public class HomeController : Controller
     {
 
            
-
-    return View("index");
-    }
-    public IActionResult carrito()
-    {
-
-        
  Carrito MiCarrito = new Carrito();
         ViewBag.Carrito = MiCarrito;
 
@@ -127,6 +120,13 @@ public class HomeController : Controller
         HttpContext.Session.SetString("Carrito", MiCarritoString);
         ViewBag.visits = HttpContext.Session.GetString("Carrito");
 
+
+    return RedirectToAction("Index", "Home");
+    }
+    public IActionResult carrito()
+    {
+
+        
 
 
 

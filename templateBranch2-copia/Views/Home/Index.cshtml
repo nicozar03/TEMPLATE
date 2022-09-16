@@ -1,9 +1,23 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Launch static backdrop modal
+</button>
 
-
-
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Cookies</h5>
+      </div>
+      <div class="modal-footer">
+        <a href= '@Url.Action("IniciarCarrito","Home")'  class="btn btn-primary"data-dismiss="modal">aceptar</a>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Start Categories of The Month -->
     <section class="container py-5">
