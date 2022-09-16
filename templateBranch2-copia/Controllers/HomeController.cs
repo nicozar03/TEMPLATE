@@ -110,7 +110,15 @@ public class HomeController : Controller
     public IActionResult IniciarCarrito()
     {
 
-            Carrito MiCarrito = new Carrito();
+           
+
+    return View("index");
+    }
+    public IActionResult carrito()
+    {
+
+        
+ Carrito MiCarrito = new Carrito();
         ViewBag.Carrito = MiCarrito;
 
 
@@ -118,26 +126,6 @@ public class HomeController : Controller
         string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
         HttpContext.Session.SetString("Carrito", MiCarritoString);
         ViewBag.visits = HttpContext.Session.GetString("Carrito");
-
-
-    return View("index");
-    }
-    public IActionResult carrito()
-    {
-
-           
-var visitString = HttpContext.Session.GetString("Carrito");
-        Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(visitString);
-
-                        
-        string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
-
-
-        ViewBag.visits2 = MiCarritoString;
-
-        HttpContext.Session.SetString("Carrito", MiCarritoString);
-
-        ViewBag.Carrito = MiCarrito;
 
 
 
