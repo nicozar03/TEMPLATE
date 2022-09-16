@@ -74,7 +74,7 @@
                            
 
                             <form action='@Url.Action("AgregarProducto","Home", new{idProducto = @ViewBag.Producto.idProducto, nombre = @ViewBag.Producto.nombre, descripcion = @ViewBag.Producto.descripcion, foto= @ViewBag.Producto.foto, marca= @ViewBag.Producto.marca, precio = @ViewBag.Producto.precio, stock=@ViewBag.Producto.stock, destacado =@ViewBag.Producto.destacado, cantidad=@ViewBag.Producto.cantidad })' method="GET">
-                                <input type="hidden" name="id" value="@ViewBag.Producto.idProducto">
+                                    <input type="hidden" name="idProducto" value="@ViewBag.Producto.idProducto">
                                 <input type="hidden" name="nombre" value="@ViewBag.Producto.nombre">
                                 <input type="hidden" name="descripcion" value="@ViewBag.Producto.descripcion">
                                 <input type="hidden" name="foto" value="@ViewBag.Producto.foto">

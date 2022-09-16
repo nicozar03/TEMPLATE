@@ -9,7 +9,7 @@ namespace templateBranch2.Models
 {
     public static class BD
     {   
-        private static string _connectionString =  @"Server=A-PHZ2-CIDI-045; DataBase=papeleraVipDatabase;Integrated Security=false; Trusted_Connection=True;";
+        private static string _connectionString =  @"Server=A-PHZ2-CIDI-046; DataBase=papeleraVipDatabase;Integrated Security=false; Trusted_Connection=True;";
 
         private static List<Producto> _ListaProducto = new List<Producto> ();
          private static List<subCategorias> _listaProductosSubcategoria = new List<subCategorias> ();

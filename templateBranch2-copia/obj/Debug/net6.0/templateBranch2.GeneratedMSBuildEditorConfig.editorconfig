@@ -8,65 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = templateBranch2
 build_property.RootNamespace = templateBranch2
-build_property.ProjectDir = C:\Users\devandroid\Desktop\TEMPLATE\templateBranch2-copia\
+build_property.ProjectDir = C:\Users\devandroid\Documents\GitHub\TEMPLATE\templateBranch2-copia\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\devandroid\Desktop\TEMPLATE\templateBranch2-copia
+build_property.MSBuildProjectDirectory = C:\Users\devandroid\Documents\GitHub\TEMPLATE\templateBranch2-copia
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Home/carrito.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Home/carrito.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjYXJyaXRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Home/contacto.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Home/contacto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Home/detalleProducto.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Home/detalleProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkZXRhbGxlUHJvZHVjdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Home/FAQ.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Home/FAQ.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Home/Index.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Home/paginaProductos.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Home/paginaProductos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwYWdpbmFQcm9kdWN0b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Home/Privacy.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Home/productos.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Home/productos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwcm9kdWN0b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Home/productosSubcategoria.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Home/productosSubcategoria.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwcm9kdWN0b3NTdWJjYXRlZ29yaWEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Shared/Error.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/_ViewImports.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/_ViewStart.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/devandroid/Desktop/TEMPLATE/templateBranch2-copia/Views/Shared/_Layout.cshtml]
+[C:/Users/devandroid/Documents/GitHub/TEMPLATE/templateBranch2-copia/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-h2pg2zz6tn
