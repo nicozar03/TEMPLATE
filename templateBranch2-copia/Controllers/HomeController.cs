@@ -116,9 +116,8 @@ public class HomeController : Controller
         ViewBag.visits = HttpContext.Session.GetString("Carrito");
     return RedirectToAction("Index", "Home");
     }
-    public IActionResult carrito(Carrito MiCarrito)
+    public IActionResult carrito(string MiCarritoString)
     {
-        ViewBag.visits = HttpContext.Session.GetString("Carrito");
         return View();
     }
 
