@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="~/css/custom.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="~/css/fontawesome.min.css">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -30,6 +31,8 @@
         
         ListasubCategorias = BD.ListarsubCategorias();
         ViewBag.subCategorias = ListasubCategorias;
+
+        
 }
 
 
@@ -80,7 +83,7 @@
                         </ul>
                     </div>
                      <a class="nav-icon position-relative text-decoration-none" asp-area="" asp-controller="Home" asp-action="carrito" >
-                        <i class="fa fa-shopping-cart text-dark"  style= "font-size:24px;color:white; margin-right:5vw;"></i>
+                        <i class="fa fa-2x fa-shopping-cart text-dark"  style= "font-size:32px;color:white; margin-right:5vw;"></i>
                     </a>
                     </div>
             </nav>
@@ -103,7 +106,8 @@
             </main>
         </div>
 <div class="vw-98 d-flex justify-content-end" style="margin-top: 2vh">
- <a target="_blank" href="https://wa.me/5491156591284"><img src="~/img/wpp.png" class= "wpp"/></a>
+    <a href="https://wa.me/5491156591284" class="whatsapp" target="_blank"> <i class="fa fa-2x fa-whatsapp whatsapp-icon"></i></a>
+
  </div>
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
