@@ -1,23 +1,42 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Launch static backdrop modal
-</button>
+<script>
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+var myModal = document.getElementById('myModal')
+myModalEl.addEventListener('hidden.bs.modal', function (event) {
+  document.getElementById("myModal").style.display = "block";
+})
+</script>
+
+
+
+<script>
+function ocultarModal() 
+{
+    document.getElementById("myModal").style.display = "none";
+}
+</script>
+
+
+
+<div class="modal" tabindex="-1" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Cookies</h5>
+        <h5 class="modal-title">Cookies y politica de privacidad</h5>
+      </div>
+      <div class="modal-body">
+        <p>Para que este sitio funcione necesitamos encarecidamente que aceptes la implementación de cookies. Su información nunca será compartida con terceros</p>
       </div>
       <div class="modal-footer">
-        <a href= '@Url.Action("IniciarCarrito","Home")'  class="btn btn-primary"data-dismiss="modal">aceptar</a>
+       <a href= '@Url.Action("IniciarCarrito","Home")' onclick="ocultarModal()" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">aceptar</a>
       </div>
     </div>
   </div>
 </div>
+
 
     <!-- Start Categories of The Month -->
     <section class="container py-5">
@@ -73,7 +92,7 @@
                      <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                             <ul class="list-unstyled">
                                 <li><a href='@Url.Action("detalleProductos","Home", new{idProducto = productos.idProducto, nombre = productos.nombre, descripcion = productos.descripcion , idCategoria = productos.idCategoria})'  class="btn btn-success text-white mt-2"><i class="far fa-eye"></i></a></li>
-                                <li><a class="btn btn-success text-white mt-2"href='@Url.Action("AgregarProducto","Home", new{idProducto = productos.idProducto, nombre = productos.nombre, descripcion = productos.descripcion, foto= productos.foto, marca= productos.marca, precio = productos.precio, stock=productos.stock, destacado =productos.destacado ,cantidad = productos.cantidad})' ><i class="fas fa-cart-plus"></i></a></li>
+                                <li><a class="btn btn-success text-white mt-2"href='@Url.Action("AgregarProducto","Home", new{idProducto = productos.idProducto, nombre = productos.nombre, descripcion = productos.descripcion, foto= productos.foto, marca= productos.marca, precio = productos.precio, stock=productos.stock, destacado =productos.destacado ,cantidad = 1})' ><i class="fas fa-cart-plus"></i></a></li>
                         </ul>
                      </div>
                  </div>
