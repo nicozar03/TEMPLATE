@@ -23,6 +23,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
 
+
         List<Producto> ListaProductos = new List<Producto>();
         ListaProductos = BD.ListaProductosDestacados(); 
         ViewBag.Producto = ListaProductos;
