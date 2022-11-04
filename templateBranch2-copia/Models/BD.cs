@@ -27,7 +27,7 @@ namespace templateBranch2.Models
 
         public static List<Producto> ListaProductosDestacados(){
             List<Producto> ListaProductosDestacados = new List<Producto> ();
-            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=VipPapelera2022")){
+            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=")){
                 string sql="SELECT * from productos WHERE destacado = 1";
                 ListaProductosDestacados = con.Query<Producto>(sql).ToList();
             }
@@ -35,7 +35,7 @@ namespace templateBranch2.Models
         }
         public static List<Producto> ListaProductos(){
             List<Producto> ListaProductos = new List<Producto> ();
-            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=VipPapelera2022")){
+            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=")){
                 string sql="SELECT * from productos";
                 ListaProductos = con.Query<Producto>(sql).ToList();
             }
@@ -43,7 +43,7 @@ namespace templateBranch2.Models
         }
           public static List<Producto> ListarProductosxSubCategorias(int idSubcategoria){
             List<Producto> listaProductosSubcategoria= new List<Producto> ();
-           using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=VipPapelera2022")){
+           using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=")){
                 string sql="SELECT * from productos where idSubcategoria = @pidSubcategoria";
                 listaProductosSubcategoria = con.Query<Producto>(sql, new{pidSubcategoria = idSubcategoria}).ToList();
             }
@@ -52,7 +52,7 @@ namespace templateBranch2.Models
 
         public static List<subCategorias> ListarsubCategorias(){
             List<subCategorias> ListasubCategorias= new List<subCategorias> ();
-            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=VipPapelera2022")){
+            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=")){
                 string sql="SELECT * from subCategorias";
                 ListasubCategorias = con.Query<subCategorias>(sql).ToList();
             }
@@ -60,7 +60,7 @@ namespace templateBranch2.Models
         }
           public static List<Categorias> ListarCategorias(){
             List<Categorias> ListaCategorias= new List<Categorias> ();
-            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=VipPapelera2022")){
+            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=")){
                 string sql="SELECT * from Categorias";
                 ListaCategorias = con.Query<Categorias>(sql).ToList();
             }
@@ -69,7 +69,7 @@ namespace templateBranch2.Models
 
        public static Producto ConsultaProducto(int idProducto){
             Producto UnProducto = null;
-            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=VipPapelera2022")){
+            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=")){
                 string sql="SELECT * from productos WHERE idProducto = @pidProducto";
                 UnProducto = con.QueryFirstOrDefault<Producto>(sql, new{pidProducto = idProducto});
             }
@@ -78,7 +78,7 @@ namespace templateBranch2.Models
 
            public static List<Producto> ConsultaEspecialidad(int idCategoria){
             List<Producto>  ListaProductosEspecialidad =new List<Producto> ();
-            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=VipPapelera2022")){
+            using(MySqlConnection con = new MySqlConnection("server=localhost;user=root;database=papeleravipdatabase;port=3306;password=")){
                 string sql="SELECT * from productos WHERE idCategoria = @pidCategoria";
                 ListaProductosEspecialidad = con.Query<Producto>(sql,new{pidCategoria = idCategoria}).ToList();
             }

@@ -117,9 +117,21 @@ public class HomeController : Controller
         ViewBag.visits = HttpContext.Session.GetString("Carrito");
     return RedirectToAction("Index", "Home");
     }
-    public IActionResult carrito(string MiCarritoString)
-    {
-        return View();
+    public IActionResult carrito()
+    {   
+          var visitString = HttpContext.Session.GetString("Carrito");
+        Carrito MiCarrito = JsonConvert.DeserializeObject<Carrito>(visitString);
+
+                        
+        string MiCarritoString = JsonConvert.SerializeObject(MiCarrito);
+
+
+        ViewBag.visits2 = MiCarritoString;
+
+        HttpContext.Session.SetString("Carrito", MiCarritoString);
+
+        ViewBag.Carrito = MiCarrito;
+        return View("Carrito");
     }
 
     [HttpGet]
