@@ -152,7 +152,7 @@ public class HomeController : Controller
 
         ViewBag.Carrito = MiCarrito;
 
-        return View("Carrito");
+        return RedirectToAction("Carrito");
     }
     public IActionResult SumarCantidad(int idProducto)
     {

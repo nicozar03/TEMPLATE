@@ -1,28 +1,41 @@
 using System.Collections.Generic;
 using System;
+public static class Extensions
+{
+    public static bool find<T>(this List<T> list, T target) {
+        return list.Contains(target);
+    }
+}
 namespace templateBranch2.Models
 {
 
     public class Carrito
     {
-        public List<Producto> ListaProductos = new List<Producto>();
+        public Dictionary<int,Producto> ListaProductos = new Dictionary<int, Producto>();
         
 
         public void AgregarProducto(Producto Prod)
         {
-            ListaProductos.Add(Prod);
+
+        if (ListaProductos.ContainsKey(Prod.idProducto)) {
+         ListaProductos[Prod.idProducto].cantidad = ListaProductos[Prod.idProducto].cantidad + Prod.cantidad;
+        }
+        else {
+          ListaProductos.Add(Prod.idProducto, Prod);
+        }
+            
         }
 
-        public List<Producto> ListarProductos()
+        public Dictionary<int,Producto> ListarProductos()
         {
             return ListaProductos;
         }
 
-         public float PrecioTotal(List<Producto> ListaProductos){
+         public float PrecioTotal(Dictionary<int,Producto> ListaProductos){
            
            float precioFinal = 0;
           
-            foreach(Producto item in ListaProductos)
+            foreach(Producto item in ListaProductos.Values)
             {   
                      
                     
@@ -34,9 +47,9 @@ namespace templateBranch2.Models
          }
 
         
-        public List<Producto> sumarCantidad(int idProducto)
+        public Dictionary<int,Producto> sumarCantidad(int idProducto)
         {
-            foreach(Producto item in ListaProductos)
+            foreach(Producto item in ListaProductos.Values)
             {
                 if(item.idProducto == idProducto)
                 {
@@ -46,40 +59,22 @@ namespace templateBranch2.Models
 
             return ListaProductos;
         }
- List<Producto> listaBorrar = new List<Producto>();
-         public List<Producto> restarCantidad(int idProducto)
-        {
-          
-            foreach(Producto item in ListaProductos)
-            {  
-                if(item.idProducto == idProducto)
-                {
-                    item.cantidad = item.cantidad - 1;
-                  if(item.cantidad==0){
-                
-                listaBorrar.Add(item);
-                                      }
-                }
-            
-            }
-            ListaProductos.RemoveAll(lp => listaBorrar.Any(lb => lb.idProducto == lp.idProducto));
+    //List<Producto> listaBorrar = new List<Producto>();
 
+
+         public Dictionary<int,Producto> restarCantidad(int idProducto)
+        {
+            Producto ProductoARestar = ListaProductos[idProducto];
+            ProductoARestar.cantidad--; 
+            if (ProductoARestar.cantidad == 0){
+                ListaProductos.Remove(idProducto);
+            }
             return ListaProductos;
         }
-        public List<Producto> borrarProducto(int idProducto)
-        {
-            foreach(Producto item in ListaProductos)
-            {  
-                if(item.idProducto == idProducto)
-                {
-            
-                listaBorrar.Add(item);
-                                     
-                }
-            
-            }
-            ListaProductos.RemoveAll(lp => listaBorrar.Any(lb => lb.idProducto == lp.idProducto));
 
+        public Dictionary<int,Producto> borrarProducto(int idProducto)
+        {
+            ListaProductos.Remove(idProducto);
             return ListaProductos;
         }
       
