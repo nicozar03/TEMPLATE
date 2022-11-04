@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rCkwAv3BA3oHws1allOcE2KvZn+7LNmxZw2FumXQMdY=",
+  "Hash": "8wNwtJhWAwRsBFTNg+7KfuKX4xdmP2NbwSJvmB4WxgI=",
   "Source": "templateBranch2",
   "BasePath": "_content/templateBranch2",
   "Mode": "Default",
@@ -185,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\slick.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\devandroid\\Documents\\GitHub\\TEMPLATE\\templateBranch2-copia\\wwwroot\\css\\sweetalert2.css",
+      "SourceId": "templateBranch2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\devandroid\\Documents\\GitHub\\TEMPLATE\\templateBranch2-copia\\wwwroot\\",
+      "BasePath": "_content/templateBranch2",
+      "RelativePath": "css/sweetalert2.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\sweetalert2.css"
     },
     {
       "Identity": "C:\\Users\\devandroid\\Documents\\GitHub\\TEMPLATE\\templateBranch2-copia\\wwwroot\\css\\templatemo.css",
@@ -559,6 +576,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\slick.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\devandroid\\Documents\\GitHub\\TEMPLATE\\templateBranch2-copia\\wwwroot\\js\\sweetalert2.js",
+      "SourceId": "templateBranch2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\devandroid\\Documents\\GitHub\\TEMPLATE\\templateBranch2-copia\\wwwroot\\",
+      "BasePath": "_content/templateBranch2",
+      "RelativePath": "js/sweetalert2.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\sweetalert2.js"
     },
     {
       "Identity": "C:\\Users\\devandroid\\Documents\\GitHub\\TEMPLATE\\templateBranch2-copia\\wwwroot\\js\\templatemo.js",
